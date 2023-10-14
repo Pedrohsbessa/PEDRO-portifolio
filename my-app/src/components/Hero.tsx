@@ -18,13 +18,13 @@ const Hero = (props: Props) => {
             <h2 className="text-center text-sm uppercase text-gray-500 pb-2 tracking-[1.8rem]">
                 Software Engineer
             </h2>
-            <h1 className="text-5xl lg:text-6xl font-semibold px-10 z-20">
+            <h1 className="text-2xl lg:text-3xl font-semibold px-10 z-20">
                 <span className="mr-3">
                     <Typewriter
                         words={[
                             'Olá eu sou o Pedro',
                             '<um-cara-que-ama-café/>.tsx☕',
-                            '<que-ama-mais-ainda-mais-programar/>.tsx❤️',
+                            '<e-ama-ainda-mais-programar/>.tsx❤️',
                         ]}
                         cursor
                         cursorColor="#726d6d"
