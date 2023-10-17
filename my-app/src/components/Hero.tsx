@@ -23,8 +23,8 @@ const Hero = (props: Props) => {
                     <Typewriter
                         words={[
                             'Olá eu sou o Pedro',
-                            '<um-cara-que-ama-café/>.tsx☕',
-                            '<e-ama-ainda-mais-programar/>.tsx❤️',
+                            '<um-cara-que-ama-café/>☕',
+                            'e-ama-ainda-mais-programar.tsx❤️',
                         ]}
                         cursor
                         cursorColor="#726d6d"

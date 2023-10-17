@@ -1,6 +1,8 @@
 import About from '@/components/About'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
 import WorkExperience from '@/components/WorkExperience'
 
 export default function Home() {
@@ -21,9 +23,13 @@ export default function Home() {
                 <WorkExperience />
             </section>
             {/* SKILLS */}
-            <section id="skills" className=""></section>
+            <section id="skills" className="snap-center">
+                <Skills />
+            </section>
             {/* PROJECTS */}
-            <section id="projects" className=""></section>
+            <section id="projects" className="snap-center">
+                <Projects />
+            </section>
 
             {/* CONTACT ME */}
             <section id="contact" className=""></section>
