@@ -21,7 +21,7 @@ export default function Skill({
                     x: directionLeft ? -200 : 200,
                     opacity: 0,
                 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1.2, ease: 'linear' }}
                 whileInView={{ opacity: 1, x: 0 }}
                 src={image}
                 className="rounded-full border border-gray-500 object-center w-20 h-20 xl:w-28 xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out bg-gray-200"
