@@ -1,10 +1,14 @@
 'use client'
-import { PhoneIcon, MapIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
-import React from 'react'
+import React, { useState } from 'react'
 import emailJs from '@emailjs/browser'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
+import Snackbar from '@mui/material/Snackbar'
+import { EnvelopeIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { Alert } from '@mui/material'
+
 type Props = {}
+
 type Inputs = {
     name: string
     email: string
@@ -13,16 +17,43 @@ type Inputs = {
 }
 
 export default function ContactMe({}: Props) {
-    const { register, handleSubmit } = useForm<Inputs>()
-    const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
-        const message = `Nome: ${data.name}\nEmail: ${data.email}\nAssunto: ${data.subject}\nMensagem: ${data.message}`
-        emailJs.send(
-            'service_34byqco',
-            'template_awzw9el',
-            { message },
-            'SFmo1nuHc8kLxyjR_'
-        )
+    const { register, handleSubmit, reset } = useForm<Inputs>()
+
+    const [notification, setNotification] = useState({
+        open: false,
+        message: '',
+        type: 'sucess', // ou 'error' para notificação de erro
+    })
+
+    const handleCloseNotification = () => {
+        setNotification({ ...notification, open: false })
     }
+
+    const showNotification = (message: string, type: 'success' | 'error') => {
+        setNotification({
+            open: true,
+            message,
+            type,
+        })
+    }
+
+    const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
+        emailJs
+            .send(
+                'service_34byqco',
+                'template_awzw9el',
+                data,
+                'SFmo1nuHc8kLxyjR_'
+            )
+            .then(() => {
+                showNotification('Email enviado com sucesso', 'success')
+                reset()
+            })
+            .catch(() => {
+                showNotification('Erro ao enviar o email', 'error')
+            })
+    }
+
     return (
         <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
             <h3 className="absolute top-16 uppercase tracking-[1rem] text-gray-500 text-2xl">
@@ -30,7 +61,7 @@ export default function ContactMe({}: Props) {
             </h3>
             <div className="flex flex-col space-y-10">
                 <h4 className="text-2xl font-semibold text-center uppercase">
-                    Eu tenho aquilo que você precisa.{''}
+                    Eu tenho aquilo que você precisa.
                     <br />
                     <span className="decoration-[#f7ab0a]/50 underline uppercase">
                         vamos conversar.
@@ -91,6 +122,18 @@ export default function ContactMe({}: Props) {
                     </form>
                 </div>
             </div>
+            <Snackbar
+                open={notification.open}
+                autoHideDuration={3000} // Duração em milissegundos
+                onClose={handleCloseNotification}
+            >
+                <Alert
+                    onClose={handleCloseNotification}
+                    severity={notification.type}
+                >
+                    {notification.message}
+                </Alert>
+            </Snackbar>
         </div>
     )
 }
