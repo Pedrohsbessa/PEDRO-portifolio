@@ -32,7 +32,7 @@ export default function About({}: Props) {
                 viewport={{
                     once: true,
                 }}
-                className="-mb-28  md:mb-0 flex-shrink-0 w-28 rounded-full object-cover md:rounded-lg md:w-64 md:h-82 xl:w-[400px] xl:h-[500px]"
+                className="-mb-20 mt-14  md:mb-0 flex-shrink-0 w-24 h-24 rounded-full object-cover md:rounded-lg md:w-64 md:h-72 xl:w-[400px] xl:h-[500px]"
                 src="assets/about-img.jpg"
             />
             <motion.div
@@ -53,13 +53,13 @@ export default function About({}: Props) {
                 className="space-y-10 px-0 md:px-10"
             >
                 <h4 className="text-4xl font-semibold">
-                    Um{' '}
+                    Um {''}
                     <span className="underline decoration-[#f7ab0a]/50">
                         pouco
-                    </span>{' '}
-                    sobre mim
+                    </span>
+                    {''} sobre mim
                 </h4>
-                <p className="text-base">
+                <p className="text-sm">
                     Olá! Sou Pedro, um desenvolvedor apaixonado por desafios e
                     tecnologia. Atuo como freelancer desde setembro de 2022, e
                     ao longo desta jornada, tenho aprimorado minhas habilidades

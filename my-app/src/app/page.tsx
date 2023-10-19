@@ -7,7 +7,7 @@ import WorkExperience from '@/components/WorkExperience'
 
 export default function Home() {
     return (
-        <div className="bg-background text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+        <div className="bg-background text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0">
             {/* HEADER */}
             <Header />
             {/* MAIN */}
