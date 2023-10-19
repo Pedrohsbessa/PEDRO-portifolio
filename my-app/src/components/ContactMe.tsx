@@ -127,10 +127,7 @@ export default function ContactMe({}: Props) {
                 autoHideDuration={3000} // Duração em milissegundos
                 onClose={handleCloseNotification}
             >
-                <Alert
-                    onClose={handleCloseNotification}
-                    severity={notification.type}
-                >
+                <Alert onClose={handleCloseNotification} severity="success">
                     {notification.message}
                 </Alert>
             </Snackbar>
