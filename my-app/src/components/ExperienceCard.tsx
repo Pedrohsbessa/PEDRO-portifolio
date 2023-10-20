@@ -76,7 +76,7 @@ export default function ExperienceCard({}: Props) {
                 <p className="uppercase py-2 md:py-3 text-gray-300">
                     09/2022 - atual
                 </p>
-                <ul className="list-disc space-y-3 md:space-y-5 ml-3 md:ml-5 text-sm">
+                <ul className="list-disc space-y-1 sm:space-y-3 md:space-y-5 ml-3 md:ml-5 text-xs sm:text-sm">
                     <li>Desenvolvimento web e servidor.</li>
                     <li>Manutenção e atualizações de sistemas.</li>
                     <li>Comunicação com clientes.</li>

@@ -55,11 +55,11 @@ export default function ContactMe({}: Props) {
     }
 
     return (
-        <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row px-1 sm:px-10 justify-evenly mx-auto items-center">
             <h3 className="absolute top-16 uppercase tracking-[1rem] text-gray-500 text-2xl">
                 contato
             </h3>
-            <div className="flex flex-col space-y-4 ">
+            <div className="flex flex-col space-y-2 mt-20">
                 <h4 className="sm:text-2xl font-semibold text-center uppercase">
                     Eu tenho aquilo que você precisa.
                     <br />
@@ -67,7 +67,7 @@ export default function ContactMe({}: Props) {
                         vamos conversar.
                     </span>
                 </h4>
-                <div className="space-y-6">
+                <div className="space-y-2">
                     <div className=" flex items-center space-x-3 justify-center">
                         <PhoneIcon className="text-[#f7ab0a] h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">(62) 99698 3867</p>
@@ -80,7 +80,9 @@ export default function ContactMe({}: Props) {
                     </div>
                     <div className=" flex items-center space-x-6 justify-center">
                         <MapIcon className="text-[#f7ab0a] h-6 w-6 animate-pulse" />
-                        <p className="sm:text-lg font-light">Goiânia GO Brasil</p>
+                        <p className="sm:text-lg font-light">
+                            Goiânia GO Brasil
+                        </p>
                     </div>
                 </div>
                 <div>
