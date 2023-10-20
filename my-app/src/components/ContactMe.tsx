@@ -59,7 +59,7 @@ export default function ContactMe({}: Props) {
             <h3 className="absolute top-16 uppercase tracking-[1rem] text-gray-500 text-2xl">
                 contato
             </h3>
-            <div className="flex flex-col space-y-10">
+            <div className="flex flex-col space-y-6 ">
                 <h4 className="text-2xl font-semibold text-center uppercase">
                     Eu tenho aquilo que você precisa.
                     <br />

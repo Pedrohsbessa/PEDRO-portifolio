@@ -1,3 +1,4 @@
+import React from 'react'
 import About from '@/components/About'
 import ContactMe from '@/components/ContactMe'
 import Header from '@/components/Header'
@@ -8,32 +9,27 @@ import WorkExperience from '@/components/WorkExperience'
 
 export default function Home() {
     return (
-        <div className="bg-background text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0">
-            {/* HEADER */}
+        <div
+            id="home"
+            className="bg-background text-white h-screen snap-y snap-always overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/2 scrollbar-thumb-[#f7ab0a]/80"
+        >
             <Header />
-            {/* MAIN */}
-            <section id="hero" className="sm:snap-start">
+            <section id="hero" className="snap-start mt-10">
                 <Hero />
             </section>
-            {/* ABOUT */}
-            <section id="about" className="sm:snap-center">
+            <section id="about" className="snap-center mt-10">
                 <About />
             </section>
-            {/* EXPERIENCE */}
-            <section id="experience" className="sm:snap-center">
+            <section id="experience" className="snap-center mt-10">
                 <WorkExperience />
             </section>
-            {/* SKILLS */}
-            <section id="skills" className="md:snap-center">
+            <section id="skills" className="snap-center mt-10">
                 <Skills />
             </section>
-            {/* PROJECTS */}
-            <section id="projects" className="sm:snap-start">
+            <section id="projects" className="snap-center mt-10">
                 <Projects />
             </section>
-
-            {/* CONTACT ME */}
-            <section id="contact" className="sm:snap-start">
+            <section id="contact" className="snap-center mt-10">
                 <ContactMe />
             </section>
         </div>
