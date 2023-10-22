@@ -66,7 +66,7 @@ export default function Projects({}: Props) {
                         </div>
                         {projectList.map((item) => (
                             <div
-                                className="m-2 shadow-md shadow-[#f7ab0a]/10"
+                                className="m-2 shadow-sm shadow-[#f7ab0a]/30"
                                 key={item.id}
                             >
                                 <Project

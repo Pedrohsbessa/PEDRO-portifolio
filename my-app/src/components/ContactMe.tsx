@@ -85,7 +85,7 @@ export default function ContactMe({}: Props) {
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className="">
                     <form
                         onSubmit={handleSubmit(onSubmit)}
                         className="flex flex-col space-y-2 w-fit mx-auto"
@@ -94,28 +94,28 @@ export default function ContactMe({}: Props) {
                             <input
                                 {...register('name')}
                                 required
-                                className="contactInupt"
+                                className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
                                 type="text"
                                 placeholder="Nome"
                             />{' '}
                             <input
                                 {...register('email')}
                                 required
-                                className="contactInupt"
+                                className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
                                 type="email"
                                 placeholder="E-mail"
                             />
                         </div>
                         <input
                             {...register('subject')}
-                            className="contactInupt"
+                            className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
                             type="text"
                             placeholder="Assunto"
                         />
                         <textarea
                             {...register('message')}
                             required
-                            className="contactInupt"
+                            className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
                             placeholder="Mensagem"
                         />
                         <button className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold ">
