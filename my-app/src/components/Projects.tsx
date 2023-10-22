@@ -62,7 +62,7 @@ export default function Projects({}: Props) {
                             className="flex justify-center text-center items-center p-10 bg-[#f7ab0a]/95
               max-w-[400px] max-h-[310px] text-2xl text-black font-semibold"
                         >
-                            BEAUTIFUL USER INTERFACES
+                            Belas interfaces...
                         </div>
                         {projectList.map((item) => (
                             <div
@@ -81,7 +81,7 @@ export default function Projects({}: Props) {
                             className="flex justify-center text-center items-center p-10 bg-gray-800
               max-w-[400px] max-h-[328px] text-2xl font-semibold"
                         >
-                            SMOOTH USER EXPERIENCE
+                            ...Melhore a sua experiêcia
                         </div>
                     </motion.div>
                 </div>
