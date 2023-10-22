@@ -58,10 +58,7 @@ export default function Projects({}: Props) {
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         {/* ROW 1 */}
-                        <div
-                            className="flex justify-center text-center items-center p-10 bg-[#f7ab0a]/95
-              max-w-[400px] max-h-[400px] text-2xl text-black font-semibold"
-                        >
+                        <div className="flex justify-center text-center items-center p-10 bg-[#f7ab0a]/95 lg: max-w-[500px] max-h-[400px] text-2xl text-black font-semibold">
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
@@ -79,7 +76,7 @@ export default function Projects({}: Props) {
                         ))}
                         <div
                             className="flex justify-center text-center items-center p-10 bg-gray-800
-              max-w-[400px] max-h-[400px] text-2xl font-semibold"
+              max-w-[500px] max-h-[400px] text-2xl font-semibold"
                         >
                             ...Melhore a sua experiêcia
                         </div>
