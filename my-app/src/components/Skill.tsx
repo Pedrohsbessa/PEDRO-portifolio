@@ -9,7 +9,7 @@ type Props = {
 }
 
 export default function Skill({
-    directionLeft,
+
     image,
     proeficiency,
     name,
@@ -18,7 +18,7 @@ export default function Skill({
         <div className="group relative flex cursor-pointer ">
             <motion.img
                 initial={{
-                    x: directionLeft ? -200 : 200,
+                    x: 200,
                     opacity: 0,
                 }}
                 transition={{ duration: 1.2, ease: 'linear' }}
