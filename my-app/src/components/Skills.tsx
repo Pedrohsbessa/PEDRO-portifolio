@@ -22,17 +22,15 @@ export default function Skills({}: Props) {
             </h3>
             <div className="grid grid-cols-4 gap-5 mt-20">
                 <>
-                    {content.map((itens) => (
-                        <PopoverImg
-                            key={itens.id}
-                            name={itens.name}
-                            image={itens.image}
-                            imagepopover={itens.imagepopover}
-                            content={itens.content}
-                            documentation={itens.documentation}
-                        />
-                    ))}
+                <PopoverImg
+                    name="HTML5"
+                    image="assets/HTML5.svg"
+                    imagepopover="https://www.freecodecamp.org/portuguese/news/content/images/2022/01/html-examples.jpeg"
+                    content="HTML (Hypertext Markup Language) é a linguagem de marcação usada para criar páginas web. Ele define a estrutura e o conteúdo de uma página, utilizando etiquetas para indicar como o texto e os elementos devem ser exibidos no navegador. HTML fornece a base para a criação de documentos web, permitindo a inclusão de texto, imagens, links e outros recursos, tornando a informação acessível na internet."
+                    documentation="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+                />
                 </>
+                
             </div>
         </motion.div>
     )
