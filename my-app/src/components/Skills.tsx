@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import Skill from './Skill'
 import PopoverImg from './PopoverTest'
 import content from '../popovers.json'
-console.log(content)
 
 type Props = {}
 

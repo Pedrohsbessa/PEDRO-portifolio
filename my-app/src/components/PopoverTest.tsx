@@ -1,11 +1,5 @@
+import { Button, Popover, PopoverContent, PopoverHandler, Typography } from '@material-tailwind/react';
 import React from 'react'
-import {
-    Popover,
-    PopoverHandler,
-    PopoverContent,
-    Button,
-    Typography,
-} from '@material-tailwind/react'
 
 type Props = {
     name: string
