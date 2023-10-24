@@ -31,7 +31,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
     return (
         <div>
             <img
-                className="shadow-md shadow-geral/40"
+                className="shadow-md shadow-geral/40 cursor-pointer"
                 onClick={handleOpen}
                 src={src}
                 alt={name}

@@ -3,6 +3,10 @@ import Typography from '@mui/material/Typography'
 import React from 'react'
 import { Popover } from 'antd'
 import { Fade } from '@mui/material'
+import {
+    ArrowRightCircleIcon,
+    ArrowRightIcon,
+} from '@heroicons/react/24/outline'
 
 type Props = {
     name: string
@@ -32,12 +36,12 @@ export default function PopoverItem({
                     <p className="mb-14 font-normal text-xs text-gray-500">
                         {content}
                     </p>
-                    <a href="#" className=" inline-block ">
+                    <a href="#" className=" inline-block">
                         <button
                             onClick={redirect}
-                            className="flex items-center gap-x-2 capitalize text-gray-500"
+                            className="flex items-center gap-x-2 capitalize bg-geral/50 text-gray-500 border border-geral rounded-lg p-1 hover:bg-geral/20"
                         >
-                            Saiba mais
+                            Saiba Mais
                         </button>
                     </a>
                 </div>
