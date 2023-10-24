@@ -3,6 +3,7 @@
         "src": "Projects/socialpedia.png",
         "name": "Socialpedia",
         "description": "Projeto MERN de uma rede social completa e backend e frontend",
+        "techs": "React, NodeJs, ExpressJs, MongoDB, TawilwindCSS, Redux, Mongoose, Multer, Formik, Yup, JWT",
         "url": "https://github.com/Pedrohsbessa/Social-Media-App",
         "id": 0
     },
@@ -10,6 +11,7 @@
         "src": "Projects/SpaceApp.png",
         "name": "SpaceApp",
         "description": "Projeto de uma página de visualização de imagens astronômicas",
+        "techs": "React, Nodejs, ViteJs, TawilwindCSS, FramerMotion, MUI ",
         "url": "https://vite-space-app.vercel.app/",
         "id": 1
     },
@@ -17,6 +19,7 @@
         "src": "Projects/personal-page.png",
         "name": "Página pessoal",
         "description": "Projeto de uma página pessoal, com uma UI moderna",
+        "techs": "React, NextJS, Nodejs, TawilwindCSS, FramerMotion, MUI, TailwindMUI",
         "url": "https://portifolio-5rc5.vercel.app/",
         "id": 2
     },
@@ -24,6 +27,7 @@
         "src": "Projects/organo.png",
         "name": "Organo",
         "description": "Projeto de um gerenciador de equipes, com opções de criação e edição.",
+        "techs": "React, Nodejs, TailwindCSS, Nodejs, Styledcomponents",
         "url": "https://organo-2-seven.vercel.app/",
         "id": 3
     },
@@ -31,6 +35,7 @@
         "src": "Projects/Todo.png",
         "name": "Todo",
         "description": "Lista de tarefas com salvamento no armazenamento local do navegador",
+        "techs": "Javascript, Nodejs, Html e Tailwind CSS",
         "url": "https://to-do-list-advanced.vercel.app/",
         "id": 4
     },
@@ -38,6 +43,7 @@
         "src": "Projects/secretnumber.png",
         "name": "Número secreto",
         "description": "Game que sorteia um número, recebe valores por comando de voz e indica o usuário até o numero correto",
+        "techs": "Javascript, Nodejs, Html e Css",
         "url": "https://n-mero-secreto-u2r8.vercel.app/",
         "id": 5
     }

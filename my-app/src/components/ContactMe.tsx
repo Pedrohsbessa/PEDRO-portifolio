@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import emailJs from '@emailjs/browser'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { EnvelopeIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { AlertDismissible } from './Alert'
 
 type Props = {}
 
@@ -26,9 +25,7 @@ export default function ContactMe({}: Props) {
                 'SFmo1nuHc8kLxyjR_'
             )
             .then(() => {
-                <AlertDismissible/>
                 reset()
-                
             })
             .catch(() => {})
     }
@@ -42,23 +39,23 @@ export default function ContactMe({}: Props) {
                 <h4 className="sm:text-2xl font-semibold text-center uppercase">
                     Eu tenho aquilo que você precisa.
                     <br />
-                    <span className="decoration-[#f7ab0a]/50 underline uppercase">
+                    <span className="text-geral  uppercase">
                         vamos conversar.
                     </span>
                 </h4>
                 <div className="space-y-2">
                     <div className=" flex items-center space-x-3 justify-center">
-                        <PhoneIcon className="text-[#f7ab0a] h-6 w-6 animate-pulse" />
+                        <PhoneIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">(62) 99698 3867</p>
                     </div>
                     <div className=" flex items-center space-x-3 justify-center">
-                        <EnvelopeIcon className="text-[#f7ab0a] h-6 w-6 animate-pulse" />
+                        <EnvelopeIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">
                             pedro.bessa.dev@gmail.com
                         </p>
                     </div>
                     <div className=" flex items-center space-x-6 justify-center">
-                        <MapIcon className="text-[#f7ab0a] h-6 w-6 animate-pulse" />
+                        <MapIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">
                             Goiânia GO Brasil
                         </p>
@@ -73,31 +70,31 @@ export default function ContactMe({}: Props) {
                             <input
                                 {...register('name')}
                                 required
-                                className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
+                                className="outline-none bg-transparent shadow-sm shadow-geral/30 rounded-sm border-b px-6 py-4 border-[#242424] placeholder-gray-400 transition-all focus:border-geral/40 focus:text-geral/70  hover:border-geral/40"
                                 type="text"
                                 placeholder="Nome"
                             />{' '}
                             <input
                                 {...register('email')}
                                 required
-                                className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
+                                className="outline-none bg-transparent shadow-sm shadow-geral/30 rounded-sm border-b px-6 py-4 border-[#242424] placeholder-gray-400 transition-all focus:border-geral/40 focus:text-geral/70  hover:border-geral/40"
                                 type="email"
                                 placeholder="E-mail"
                             />
                         </div>
                         <input
                             {...register('subject')}
-                            className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
+                            className="outline-none bg-transparent shadow-sm shadow-geral/30 rounded-sm border-b px-6 py-4 border-[#242424] placeholder-gray-400 transition-all focus:border-geral/40 focus:text-geral/70  hover:border-geral/40"
                             type="text"
                             placeholder="Assunto"
                         />
                         <textarea
                             {...register('message')}
                             required
-                            className="outline-none bg-transparent shadow-sm shadow-[#f7ab0a]/30 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40  hover:border-[#f7ab0a]/40"
+                            className="outline-none bg-transparent shadow-sm shadow-geral/30 rounded-sm border-b px-6 py-4 border-[#242424] placeholder-gray-400 transition-all focus:border-geral/40 focus:text-geral/70  hover:border-geral/40"
                             placeholder="Mensagem"
                         />
-                        <button className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold ">
+                        <button className="bg-geral py-5 px-10 rounded-md text-black font-bold ">
                             Enviar
                         </button>
                     </form>

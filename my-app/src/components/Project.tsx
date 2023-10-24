@@ -29,7 +29,7 @@ export default function Project({ name, src, title, url }: Props) {
             transition={{
                 duration: 1.2,
             }}
-            className="relative mb-6 p-2 rounded-lg drop-shadow-lg "
+            className="relative mb-6 p-2 rounded-lg  "
         >
             <img src={src} alt={name} />
             <div className="space-y-2">
@@ -38,7 +38,7 @@ export default function Project({ name, src, title, url }: Props) {
 
                 <button
                     onClick={redirect}
-                    className="w-full bg-[#f7ab0a] hover:bg-[#f7ab0a]/80 p-1 text-black font-semibold rounded-lg"
+                    className="w-full bg-geral hover:bg-geral/80 p-1 text-black font-semibold rounded-lg"
                 >
                     Conheça
                 </button>

@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import projectList from '../projects.json'
 import Project from './Project'
+import ImagesModal from './ImagesModal'
 
 const container: {
     hidden: {}
@@ -57,19 +58,20 @@ export default function Projects({}: Props) {
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         {/* ROW 1 */}
-                        <div className="flex justify-center text-center items-center p-10 bg-[#f7ab0a]/95 lg: max-w-[500px] max-h-[400px] text-2xl text-black font-semibold">
+                        <div className="flex justify-center text-center items-center p-10 bg-geral/100 lg: max-w-[500px] max-h-[400px] text-2xl text-black font-semibold">
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
                             <div
-                                className="m-2 shadow-sm shadow-[#f7ab0a]/30"
+                                className="m-2 shadow-sm shadow-geral/30"
                                 key={item.id}
                             >
-                                <Project
+                                <ImagesModal
                                     url={item.url}
                                     name={item.name}
                                     src={item.src}
                                     title={item.description}
+                                    techs={item.techs}
                                 />
                             </div>
                         ))}

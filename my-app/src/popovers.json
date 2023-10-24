@@ -58,7 +58,7 @@
     {
         "name": "Angular",
         "image": "assets/angular.svg",
-        "imagepopover": "https://images.indepth.dev/images/2020/05/image-41.png",
+        "imagepopover": "https://code.visualstudio.com/assets/docs/nodejs/angular/bracket-matching.png",
         "content": "Angular é um robusto framework de desenvolvimento web mantido pelo Google. Ele simplifica a criação de aplicativos web dinâmicos e escaláveis, fornecendo uma estrutura organizada e componentizada. Com recursos como data binding bidirecional, injeção de dependência e um poderoso sistema de roteamento, o Angular é uma escolha popular para desenvolvedores que desejam construir aplicações web interativas e de alto desempenho.",
         "documentation": "https://angular.io/docs",
         "id": "7"
