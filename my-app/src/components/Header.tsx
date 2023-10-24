@@ -45,7 +45,7 @@ const Header = (props: Props) => {
                     fgColor="gray"
                     bgColor="transparent"
                     network="instagram"
-                    href="#"
+                    href="https://www.instagram.com/pedro.bessa.dev/"
                     target="_blank"
                 />
 
@@ -77,11 +77,11 @@ const Header = (props: Props) => {
                     fgColor="gray"
                     bgColor="transparent"
                     network="email"
-                    href="https://www.youtube.com/@LofiGirl"
+                    href="#contact"
                     target="_blank"
                 />
                 <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-                    entrar em contato
+                    entre em contato
                 </p>
             </motion.div>
         </header>
