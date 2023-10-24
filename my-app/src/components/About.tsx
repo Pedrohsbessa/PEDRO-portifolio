@@ -35,9 +35,7 @@ export default function About({}: Props) {
                 <div className="space-y-6 px-2 md:px-6 text-xs md:text-sm">
                     <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold">
                         Um {''}
-                        <span className="underline decoration-[#f7ab0a]/50">
-                            pouco
-                        </span>
+                        <span className="text-geral">pouco</span>
                         {''} sobre mim
                     </h4>
                     <p>
