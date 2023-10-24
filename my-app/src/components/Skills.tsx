@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import PopoverImg from './PopoverTest'
 import content from '../popovers.json'
+import PopoverItem from './Popover'
 
 type Props = {}
 
@@ -23,10 +23,14 @@ export default function Skills({}: Props) {
             <div className="grid grid-cols-4 gap-5 mt-20">
                 <>
                     {content.map((item) => (
-                        <>
-                            <img src={item.image} alt="" />
-                            <p>{item.name}</p>
-                        </>
+                        <PopoverItem
+                            name={item.name}
+                            key={item.name}
+                            image={item.image}
+                            content={item.content}
+                            imagepopover=""
+                            documentation=""
+                        />
                     ))}
                 </>
             </div>
