@@ -2,10 +2,8 @@
 import React, { useState } from 'react'
 import emailJs from '@emailjs/browser'
 import { useForm, SubmitHandler } from 'react-hook-form'
-
-import Snackbar from '@mui/material/Snackbar'
 import { EnvelopeIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { Alert } from '@mui/material'
+import { AlertDismissible } from './Alert'
 
 type Props = {}
 
@@ -19,24 +17,6 @@ type Inputs = {
 export default function ContactMe({}: Props) {
     const { register, handleSubmit, reset } = useForm<Inputs>()
 
-    const [notification, setNotification] = useState({
-        open: false,
-        message: '',
-        type: 'sucess', // ou 'error' para notificação de erro
-    })
-
-    const handleCloseNotification = () => {
-        setNotification({ ...notification, open: false })
-    }
-
-    const showNotification = (message: string, type: 'success' | 'error') => {
-        setNotification({
-            open: true,
-            message,
-            type,
-        })
-    }
-
     const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
         emailJs
             .send(
@@ -46,12 +26,11 @@ export default function ContactMe({}: Props) {
                 'SFmo1nuHc8kLxyjR_'
             )
             .then(() => {
-                showNotification('Email enviado com sucesso', 'success')
+                <AlertDismissible/>
                 reset()
+                
             })
-            .catch(() => {
-                showNotification('Erro ao enviar o email', 'error')
-            })
+            .catch(() => {})
     }
 
     return (
@@ -124,15 +103,6 @@ export default function ContactMe({}: Props) {
                     </form>
                 </div>
             </div>
-            <Snackbar
-                open={notification.open}
-                autoHideDuration={3000} // Duração em milissegundos
-                onClose={handleCloseNotification}
-            >
-                <Alert onClose={handleCloseNotification} severity="success">
-                    {notification.message}
-                </Alert>
-            </Snackbar>
         </div>
     )
 }
