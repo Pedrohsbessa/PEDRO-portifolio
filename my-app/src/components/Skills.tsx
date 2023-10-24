@@ -23,7 +23,7 @@ export default function Skills({}: Props) {
             <div className="grid grid-cols-4 gap-5 mt-20">
                 {content.map((itens) => (
                     <PopoverImg
-                        key={itens.key}
+                        key={itens.id}
                         name={itens.name}
                         image={itens.image}
                         imagepopover={itens.imagepopover}
