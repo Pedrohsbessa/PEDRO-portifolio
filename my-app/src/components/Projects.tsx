@@ -2,7 +2,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import projectList from '../projects.json'
-import Project from './Project'
 import ImagesModal from './ImagesModal'
 
 const container: {
