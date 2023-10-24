@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div
             id="home"
-            className="bg-background text-white h-screen snap-y snap-always overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/2 scrollbar-thumb-[#f7ab0a]/80"
+            className="bg-background text-white h-screen snap-y snap-always overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/2 scrollbar-thumb-geral/80"
         >
             <Header />
             <section id="hero" className="snap-start mt-10">
