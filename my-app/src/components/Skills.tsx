@@ -21,16 +21,18 @@ export default function Skills({}: Props) {
                 Passe por cima da skill e veja minha proeficiência nela
             </h3>
             <div className="grid grid-cols-4 gap-5 mt-20">
-                {content.map((itens) => (
-                    <PopoverImg
-                        key={itens.id}
-                        name={itens.name}
-                        image={itens.image}
-                        imagepopover={itens.imagepopover}
-                        content={itens.content}
-                        documentation={itens.documentation}
-                    />
-                ))}
+                <>
+                    {content.map((itens) => (
+                        <PopoverImg
+                            key={itens.id}
+                            name={itens.name}
+                            image={itens.image}
+                            imagepopover={itens.imagepopover}
+                            content={itens.content}
+                            documentation={itens.documentation}
+                        />
+                    ))}
+                </>
             </div>
         </motion.div>
     )
