@@ -1,0 +1,130 @@
+[
+    {
+        "name": "HTML5",
+        "image": "assets/HTML5.svg",
+        "imagepopover": "https://www.freecodecamp.org/portuguese/news/content/images/2022/01/html-examples.jpeg",
+        "content": "HTML (Hypertext Markup Language) é a linguagem de marcação usada para criar páginas web. Ele define a estrutura e o conteúdo de uma página, utilizando etiquetas para indicar como o texto e os elementos devem ser exibidos no navegador. HTML fornece a base para a criação de documentos web, permitindo a inclusão de texto, imagens, links e outros recursos, tornando a informação acessível na internet.",
+        "documentation": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+        "key": "0"
+    },
+    {
+        "name": "Css-3",
+        "image": "assets/CSS3.svg",
+        "imagepopover": "https://www.freecodecamp.org/news/content/images/2023/06/pexels-bibek-ghosh-14553706.jpg",
+        "content": "CSS3 (Cascading Style Sheets 3) é a terceira versão do CSS, uma linguagem de estilo usada para controlar a apresentação visual de páginas web. Com o CSS3, os desenvolvedores podem aplicar formatação, cores, layout e animações a elementos HTML, aprimorando a estética e usabilidade de sites. Ele traz funcionalidades avançadas, como sombras, gradientes, transições e transformações, permitindo um design mais criativo e responsivo em páginas da web. CSS3 desempenha um papel fundamental na personalização e no aprimoramento visual de sites modernos.",
+        "documentation": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "key": "1"
+    },
+    {
+        "name": "Javascript",
+        "image": "assets/javascript.svg",
+        "imagepopover": "https://res.cloudinary.com/practicaldev/image/fetch/s--Y4qqIvUe--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ui5xn1qpp4sgee1mryey.jpeg",
+        "content": "JavaScript é uma linguagem de programação amplamente utilizada para tornar as páginas web interativas e dinâmicas. Com JavaScript, os desenvolvedores podem adicionar funcionalidades como validação de formulários, animações, manipulação de eventos e comunicação com servidores, enriquecendo a experiência do usuário na web. Sendo executado no navegador do usuário, o JavaScript é essencial para o desenvolvimento de aplicativos da web modernos e é uma peça fundamental no desenvolvimento web contemporâneo.",
+        "documentation": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "key": "2"
+    },
+    {
+        "name": "Typescript",
+        "image": "assets/typescript.svg",
+        "imagepopover": "https://codecarbon.com/wp-content/uploads/2020/11/TypeScript-4.1-release.jpg",
+        "content": "TypeScript é uma linguagem de programação baseada em JavaScript, que acrescenta um sistema de tipos estáticos ao JavaScript. Ela permite aos desenvolvedores escrever código mais seguro e escalável, identificando erros de tipagem em tempo de compilação, antes da execução. O TypeScript é amplamente adotado no desenvolvimento web, especialmente em projetos de grande escala, proporcionando uma codificação mais robusta, manutenível e eficiente em aplicações modernas baseadas na web.",
+        "documentation": "https://www.typescriptlang.org/docs/",
+        "key": "3"
+    },
+    {
+        "name": "React",
+        "image": "assets/react.svg",
+        "imagepopover": "https://www.freecodecamp.org/news/content/images/2022/03/photo-1619410283995-43d9134e7656.jpeg",
+        "content": "React é uma biblioteca de JavaScript desenvolvida pelo Facebook, que simplifica a criação de interfaces de usuário interativas e reativas. Com React, os desenvolvedores podem construir componentes reutilizáveis que respondem a alterações de estado, proporcionando uma experiência de usuário mais fluida e dinâmica. Essa biblioteca é amplamente usada no desenvolvimento de aplicativos web e móveis, e sua abordagem de 'componentização' torna o desenvolvimento mais eficiente e escalável, tornando o React uma escolha popular para o desenvolvimento de interfaces modernas e responsivas.",
+        "documentation": "https://react.dev/",
+        "key": "4"
+    },
+    {
+        "name": "Tailwind CSS",
+        "image": "assets/tailwind.svg",
+        "imagepopover": "https://i.stack.imgur.com/MIyGT.png",
+        "content": "Tailwind CSS é um framework de design de código aberto que simplifica a estilização de páginas web. Ele oferece uma abordagem altamente configurável, permitindo que os desenvolvedores criem interfaces atraentes e responsivas por meio de classes CSS diretamente no HTML. Tailwind CSS é apreciado por sua eficiência, flexibilidade e capacidade de acelerar o desenvolvimento, eliminando a necessidade de escrever estilos CSS personalizados. É uma escolha popular para equipes de desenvolvimento que desejam criar interfaces modernas e consistentes de forma eficiente.",
+        "documentation": "https://tailwindcss.com/",
+        "key": "5"
+    },
+    {
+        "name": "Styled Components",
+        "image": "assets/styled-components.svg",
+        "imagepopover": "https://miro.medium.com/v2/resize:fit:1400/1*90YWeJ6FlT3ME8xzeHS_4g.png",
+        "content": "Styled Components é uma biblioteca JavaScript para estilização em aplicações web, especialmente com a biblioteca React. Ela permite que os desenvolvedores criem componentes com estilos diretamente incorporados em seus arquivos JavaScript ou TypeScript, utilizando uma abordagem baseada em CSS-in-JS. Com Styled Components, a estilização se torna altamente encapsulada e componentizada, promovendo a reutilização e a manutenção mais simples de estilos. É amplamente adotada no desenvolvimento de aplicações React, oferecendo uma solução eficaz para estilização e tem sido apreciada por sua capacidade de criar interfaces elegantes e personalizadas.",
+        "documentation": "https://styled-components.com/",
+        "key": "6"
+    },
+    {
+        "name": "Angular",
+        "image": "assets/angular.svg",
+        "imagepopover": "https://images.indepth.dev/images/2020/05/image-41.png",
+        "content": "Angular é um robusto framework de desenvolvimento web mantido pelo Google. Ele simplifica a criação de aplicativos web dinâmicos e escaláveis, fornecendo uma estrutura organizada e componentizada. Com recursos como data binding bidirecional, injeção de dependência e um poderoso sistema de roteamento, o Angular é uma escolha popular para desenvolvedores que desejam construir aplicações web interativas e de alto desempenho.",
+        "documentation": "https://angular.io/docs",
+        "key": "7"
+    },
+    {
+        "name": "Nextjs",
+        "image": "assets/next-js.svg",
+        "imagepopover": "https://i.stack.imgur.com/mSM8j.jpg",
+        "content": "Next.js é um framework de código aberto baseado em React que simplifica a criação de aplicativos web e sites com foco em desempenho e SEO. Ele oferece renderização universal, roteamento simplificado e suporte a APIs incorporado. Desenvolvedores apreciam o Next.js por sua facilidade de uso e a capacidade de construir aplicativos React de alto desempenho com facilidade. Ele é especialmente adequado para aplicações que necessitam de SEO aprimorado e uma experiência de usuário otimizada.",
+        "documentation": "https://nextjs.org/docs",
+        "key": "8"
+    },
+    {
+        "name": "Node",
+        "image": "assets/nodejs.svg",
+        "imagepopover": "https://www.bleepstatic.com/content/hl-images/2020/08/04/nodejs-header.jpg",
+        "content": "Node.js é um ambiente de tempo de execução de código aberto que permite aos desenvolvedores construir aplicativos altamente escaláveis e eficientes. Baseado no motor JavaScript V8 do Google, ele é amplamente usado para criar servidores e aplicativos de rede. Sua arquitetura orientada a eventos e não bloqueante o torna ideal para lidar com solicitações assíncronas, tornando-o uma escolha popular para desenvolvimento de servidores web e aplicativos em tempo real.",
+        "documentation": "https://nodejs.org/en/docs",
+        "key": "9"
+    },
+    {
+        "name": "Express",
+        "image": "assets/express.svg",
+        "imagepopover": "https://miro.medium.com/v2/resize:fit:1400/0*hEFTnzz-DUAjbtIG",
+        "content": "O Express.js é um popular framework web para Node.js, projetado para simplificar o desenvolvimento de aplicativos web. Com uma API simples e robusta, ele oferece facilidade na criação de rotas, gerenciamento de solicitações HTTP e middleware personalizado. Sua flexibilidade e extensibilidade fazem do Express uma escolha preferida para construir aplicativos web eficientes e escaláveis em Node.js.",
+        "documentation": "https://expressjs.com/",
+        "key": "10"
+    },
+    {
+        "name": "Nest Js",
+        "image": "assets/nestjs.svg",
+        "imagepopover": "https://miro.medium.com/v2/resize:fit:1400/1*7PZCRqiCd8r-lFENzzywmg.png",
+        "content": "O Nest.js é um framework de desenvolvimento para Node.js que combina TypeScript com princípios de arquitetura de servidor e injeção de dependência. Ele oferece uma estrutura altamente modular e orientada a componentes para construir aplicativos escaláveis e organizados. O Nest.js é conhecido por sua abordagem eficaz para criar aplicativos server-side, fornecendo uma base sólida para criar APIs e microserviços com facilidade.",
+        "documentation": "https://docs.nestjs.com/",
+        "key": "11"
+    },
+    {
+        "name": "MongoDB",
+        "image": "assets/mongodb.svg",
+        "imagepopover": "https://images.contentstack.io/v3/assets/blt7151619cb9560896/blt1ac836088329bf07/6470d0b825223d9e8f2a4cbd/Frame-503b.svg",
+        "content": "O MongoDB é um sistema de gerenciamento de banco de dados NoSQL altamente flexível e escalável. Diferente de bancos de dados relacionais, o MongoDB armazena dados em formato BSON (Binary JSON), permitindo a criação de estruturas de dados dinâmicas. É amplamente utilizado em aplicativos modernos que requerem armazenamento de dados não estruturados ou semiestruturados. O MongoDB é conhecido por sua capacidade de lidar com grandes volumes de dados e pela simplicidade de sua modelagem, tornando-o uma escolha popular para muitos desenvolvedores.",
+        "documentation": "https://www.mongodb.com/docs/",
+        "key": "12"
+    },
+    {
+        "name": "SQL",
+        "image": "assets/sql.svg",
+        "imagepopover": "https://www.cdotrends.com/sites/default/files/SQL.jpg",
+        "content": "O SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar bancos de dados relacionais. É a base de sistemas de gerenciamento de bancos de dados como MySQL, PostgreSQL, SQL Server e Oracle. Com o SQL, os desenvolvedores podem criar, consultar e modificar estruturas de dados tabulares de forma eficiente. É uma linguagem poderosa para recuperar informações específicas de bancos de dados e realizar operações de modificação de dados, tornando-se fundamental em muitos aplicativos e sistemas de gerenciamento de dados em todo o mundo.",
+        "documentation": "https://www.w3schools.com/sql/",
+        "key": "13"
+    },
+    {
+        "name": "Java",
+        "image": "assets/java.svg",
+        "imagepopover": "https://ubiqum.com/assets/uploads/2019/07/code-coder-coding-270348.jpg",
+        "content": "Java é uma linguagem de programação versátil e amplamente utilizada que oferece portabilidade e segurança. Desenvolvida pela Oracle, a linguagem Java é conhecida por sua capacidade de escrever código uma vez e executá-lo em várias plataformas, tornando-a ideal para o desenvolvimento de aplicativos de desktop, web e móveis. Além disso, a forte ênfase na orientação a objetos e a vasta biblioteca padrão tornam o Java uma escolha popular para desenvolvedores que buscam confiabilidade, escalabilidade e desempenho em suas aplicações.",
+        "documentation": "https://docs.oracle.com/en/java/",
+        "key": "14"
+    },
+    {
+        "name": "Git e Github",
+        "image": "assets/git.svg",
+        "imagepopover": "https://blog.postman.com/wp-content/uploads/2021/11/Git-Postman-blog-better-practics-scaled.jpg",
+        "content": "O Git é um sistema de controle de versão distribuído amplamente utilizado na gestão de código-fonte. Desenvolvido por Linus Torvalds, o criador do Linux, o Git oferece um ambiente robusto para o acompanhamento de mudanças em projetos de software. Com a capacidade de rastrear e gerenciar eficientemente versões de código, colaborar com outros desenvolvedores e gerenciar branches de desenvolvimento, o Git é essencial para o desenvolvimento de software colaborativo e é a base de muitas plataformas de hospedagem de código, como o GitHub e o GitLab.",
+        "documentation": "https://git-scm.com/doc",
+        "key": "15"
+    }
+]
