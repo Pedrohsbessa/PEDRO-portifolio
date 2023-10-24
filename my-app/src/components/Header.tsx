@@ -78,7 +78,6 @@ const Header = (props: Props) => {
                     bgColor="transparent"
                     network="email"
                     href="#contact"
-                    target="_blank"
                 />
                 <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
                     entre em contato
