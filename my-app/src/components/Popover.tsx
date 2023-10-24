@@ -1,4 +1,3 @@
-
 import { Popover } from '@mui/material'
 import Typography from '@mui/material/Typography'
 
@@ -80,12 +79,12 @@ export default function PopoverItem({
                         </a>
                     </div>
                     <div className="min-h-full !w-full p-3">
-                    <img
-                        src={imagepopover}
-                        alt="image"
-                        className="h-full w-full rounded-lg object-cover sm:object-cover"
-                    />
-                </div>
+                        <img
+                            src={imagepopover}
+                            alt="image"
+                            className="h-full w-full rounded-lg object-cover sm:object-cover"
+                        />
+                    </div>
                 </div>
             </Popover>
         </div>
