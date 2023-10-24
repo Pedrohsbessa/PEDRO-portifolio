@@ -1,4 +1,4 @@
-import { Box, Button, Modal, makeStyles } from '@mui/material'
+import { Box, Button, Modal, makeStyles, useMediaQuery } from '@mui/material'
 import { Typography } from 'antd'
 import React from 'react'
 
@@ -10,16 +10,6 @@ type Props = {
     techs: string
 }
 
-const style = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    borderRadius: '25px',
-    transform: 'translate(-50%, -50%)',
-    bgcolor: '#f9f9f9',
-    p: 3,
-}
-
 export default function ImagesModal({ name, src, title, url, techs }: Props) {
     const [open, setOpen] = React.useState(false)
     const handleOpen = () => setOpen(true)
@@ -28,10 +18,26 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
         window.open(url, '_blank')
     }
 
+    // Use the useMediaQuery hook to check screen size
+    const isMobile = useMediaQuery('(max-width: 600px')
+
+    // Define styles for the modal based on screen size
+    const modalStyle = {
+        position: 'absolute' as 'absolute',
+        top: '50%',
+        left: '50%',
+        width: isMobile ? '100%' : '50%',
+        borderRadius: '25px',
+        transform: 'translate(-50%, -50%)',
+        bgcolor: '#f9f9f9',
+        p: 3,
+        boxShadow: isMobile ? 'none' : '1px 10px 15px rgba(163, 206, 241, 1)',
+    }
+
     return (
         <div>
             <img
-                className="shadow-md shadow-geral/40 cursor-pointer"
+                className="shadow-md sm:bg-red-50 shadow-geral/40 cursor-pointer"
                 onClick={handleOpen}
                 src={src}
                 alt={name}
@@ -43,12 +49,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box
-                    sx={style}
-                    style={{
-                        boxShadow: '1px 10px 15px rgba(163, 206, 241, 1))',
-                    }}
-                >
+                <Box sx={modalStyle}>
                     <div className="flex flex-col items-center  space-y-8">
                         <h2 className="text-2xl font-bold">{name} </h2>
                         <h4 className="text-lg">{title}</h4>
@@ -57,7 +58,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
                             <span className="text-gray-800">{techs} </span>{' '}
                         </p>
                         <button
-                            className="border border-geral w-fit bg-geral/50 hover:bg-geral/70 rounded-lg p-3"
+                            className="border border-geral w-fit bg-geral/50 hover-bg-geral/70 rounded-lg p-3"
                             onClick={redirect}
                         >
                             Venha conhecer 🌍
