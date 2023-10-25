@@ -56,7 +56,7 @@ export default function Projects({}: Props) {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <div className="flex justify-center text-center items-center p-10 bg-geral/100 lg: max-w-[500px] max-h-[400px] text-2xl text-black font-semibold">
+                        <div className="flex justify-center text-center items-center p-10 text-2xl animate-bounce font-semibold">
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
@@ -71,11 +71,8 @@ export default function Projects({}: Props) {
                                 />
                             </div>
                         ))}
-                        <div
-                            className="flex justify-center text-center items-center p-10 bg-gray-800
-              max-w-[500px] max-h-[400px] text-2xl font-semibold"
-                        >
-                            ...Melhore a sua experiêcia
+                        <div className="flex justify-center text-center items-center animate-bounce p-10 text-2xl font-semibold">
+                            ...Melhoram a sua experiêcia
                         </div>
                     </motion.div>
                 </div>
