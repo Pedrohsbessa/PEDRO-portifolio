@@ -56,13 +56,13 @@ export default function Projects({}: Props) {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        {/* ROW 1 */}
                         <div className="flex justify-center text-center items-center p-10 bg-geral/100 lg: max-w-[500px] max-h-[400px] text-2xl text-black font-semibold">
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
-                            <div className="m-3" key={item.id}>
+                            <div className="m-3">
                                 <ImagesModal
+                                    key={item.id}
                                     url={item.url}
                                     name={item.name}
                                     src={item.src}
