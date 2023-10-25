@@ -49,7 +49,12 @@ export default function PopoverItem({
                     <img
                         src={imagepopover}
                         alt="image"
-                        className="h-full w-full rounded-lg object-cover sm:object-cover"
+                        className="h-full w-full rounded-lg object-cover sm:object-cover hidden sm:block"
+                    />
+                    <img
+                        src="/assets/gifCoding.gif"
+                        alt="image"
+                        className="h-full w-full rounded-lg object-contain sm:hidden"
                     />
                 </div>
             </div>
