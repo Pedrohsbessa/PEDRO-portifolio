@@ -29,7 +29,12 @@ export default function ContactMe({}: Props) {
             })
             .catch(() => {})
     }
-
+    const redirect = () => {
+        window.open(
+            'http://api.whatsapp.com/send?phone=5562996983867&text=Olá',
+            '_blank'
+        )
+    }
     return (
         <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row px-1 sm:px-10 justify-evenly mx-auto items-center">
             <h3 className="absolute top-16 uppercase tracking-[1rem] text-gray-500 text-2xl">
@@ -43,23 +48,26 @@ export default function ContactMe({}: Props) {
                         vamos conversar.
                     </span>
                 </h4>
-                <div className="space-y-2">
-                    <div className=" flex items-center space-x-3 justify-center">
+                <div className="space-y-2 flex flex-col ">
+                    <button
+                        onClick={redirect}
+                        className=" flex items-center space-x-3 justify-center"
+                    >
                         <PhoneIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">(62) 99698 3867</p>
-                    </div>
-                    <div className=" flex items-center space-x-3 justify-center">
+                    </button>
+                    <button className=" flex items-center space-x-3 justify-center">
                         <EnvelopeIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">
                             pedro.bessa.dev@gmail.com
                         </p>
-                    </div>
-                    <div className=" flex items-center space-x-6 justify-center">
+                    </button>
+                    <button className=" flex items-center space-x-6 justify-center">
                         <MapIcon className="text-geral h-6 w-6 animate-pulse" />
                         <p className="sm:text-lg font-light">
                             Goiânia GO Brasil
                         </p>
-                    </div>
+                    </button>
                 </div>
                 <div className="">
                     <form
