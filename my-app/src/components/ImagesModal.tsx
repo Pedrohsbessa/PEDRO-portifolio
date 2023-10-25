@@ -31,7 +31,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
         transform: 'translate(-50%, -50%)',
         bgcolor: '#f9f9f9',
         p: 3,
-        boxShadow: isMobile ? 'none' : '1px 10px 15px rgba(163, 206, 241, 1)',
+        boxShadow: isMobile ? 'none' : '1px 2px 4px rgba(163, 206, 241, .6)',
     }
 
     return (
