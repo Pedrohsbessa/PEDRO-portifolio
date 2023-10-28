@@ -56,7 +56,7 @@ export default function Projects({}: Props) {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <div className="flex justify-center text-center items-center p-10 text-2xl animate-bounce font-semibold">
+                        <div className="flex justify-center items-center  p-10 text-2xl animate-bounce font-semibold">
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
