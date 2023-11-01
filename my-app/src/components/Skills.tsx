@@ -21,7 +21,6 @@ export default function Skills({}: Props) {
                 Passe por cima da skill e entenda melhor
             </h3>
             <div className="grid grid-cols-4 gap-5 mt-10 overflow-hidden">
-                <>
                     {content.map((item) => (
                         <PopoverItem
                             name={item.name}
@@ -32,7 +31,7 @@ export default function Skills({}: Props) {
                             documentation={item.documentation}
                         />
                     ))}
-                </>
+                
             </div>
         </motion.div>
     )

@@ -27,19 +27,19 @@ export default function PopoverItem({
         window.open(documentation, '_blank')
     }
     const body = (
-        <div className="">
-            <div className=" grid w-full sm:w-[50rem] grid-cols-2">
+        <div className="bg-background">
+            <div className=" grid grid-cols-2 w-full sm:w-[50rem] ">
                 <div className="p-2 flex flex-col justify-between">
-                    <h2 className="mb-2 text-lg font-bold text-gray-500">
+                    <h2 className="mb-2 text-lg font-bold text-gray-100">
                         {name}
                     </h2>
-                    <p className="mb-14 font-normal text-xs text-gray-500">
+                    <p className="mb-14 font-normal text-xs text-gray-100">
                         {content}
                     </p>
                     <a href="#" className=" inline-block">
                         <button
                             onClick={redirect}
-                            className="flex items-center gap-x-2 capitalize bg-geral/50 text-gray-500 border border-geral rounded-lg p-1 hover:bg-geral/20"
+                            className="flex items-center gap-x-2 capitalize bg-geral text-black border border-geral rounded-lg p-1 hover:bg-geral/70"
                         >
                             Saiba Mais
                         </button>
@@ -62,7 +62,7 @@ export default function PopoverItem({
     )
     return (
         <Fade timeout={4000}>
-            <Popover content={body}>
+            <Popover color="#242424" content={body}>
                 <img
                     src={image}
                     alt={name}

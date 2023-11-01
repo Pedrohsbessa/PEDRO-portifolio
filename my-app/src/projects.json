@@ -2,7 +2,7 @@
     {
         "src": "Projects/socialpedia.png",
         "name": "Socialpedia",
-        "description": "Projeto MERN de uma rede social completa e backend e frontend",
+        "description": "Projeto MERN de uma rede social completa com backend e frontend",
         "techs": "React, NodeJs, ExpressJs, MongoDB, TawilwindCSS, Redux, Mongoose, Multer, Formik, Yup, JWT",
         "url": "https://github.com/Pedrohsbessa/Social-Media-App",
         "id": 0

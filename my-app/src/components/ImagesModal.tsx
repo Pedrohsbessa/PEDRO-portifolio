@@ -29,7 +29,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
         width: isMobile ? '100%' : '50%',
         borderRadius: '25px',
         transform: 'translate(-50%, -50%)',
-        bgcolor: '#f9f9f9',
+        bgcolor: '#242424',
         p: 3,
         boxShadow: isMobile ? 'none' : '1px 2px 4px rgba(163, 206, 241, .6)',
     }
@@ -51,14 +51,16 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
             >
                 <Box sx={modalStyle}>
                     <div className="flex flex-col items-center  space-y-8">
-                        <h2 className="text-2xl font-bold">{name} </h2>
-                        <h4 className="text-lg">{title}</h4>
-                        <p>
+                        <h2 className="text-2xl font-bold text-gray-100">
+                            {name}{' '}
+                        </h2>
+                        <h4 className="text-lg text-gray-100">{title}</h4>
+                        <p className="text-gray-100">
                             Tecnologias:{' '}
-                            <span className="text-gray-800">{techs} </span>{' '}
+                            <span className="text-geral">{techs} </span>{' '}
                         </p>
                         <button
-                            className="border border-geral w-fit bg-geral/50 hover-bg-geral/70 rounded-lg p-3"
+                            className="border border-geral w-fit bg-geral hover:bg-geral/75 rounded-lg p-3"
                             onClick={redirect}
                         >
                             Venha conhecer 🌍
