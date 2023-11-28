@@ -1,8 +1,10 @@
 'use client'
-import React from 'react'
+import React, { lazy } from 'react'
 import { motion } from 'framer-motion'
 import content from '../popovers.json'
-import PopoverItem from './Popover'
+// import PopoverItem from './Popover'
+
+const PopoverItem = lazy(() => import('./Popover'))
 
 type Props = {}
 
@@ -21,17 +23,16 @@ export default function Skills({}: Props) {
                 Passe por cima da skill e entenda melhor
             </h3>
             <div className="grid grid-cols-4 gap-5 mt-10 overflow-hidden">
-                    {content.map((item) => (
-                        <PopoverItem
-                            name={item.name}
-                            key={item.name}
-                            image={item.image}
-                            content={item.content}
-                            imagepopover={item.imagepopover}
-                            documentation={item.documentation}
-                        />
-                    ))}
-                
+                {content.map((item) => (
+                    <PopoverItem
+                        name={item.name}
+                        key={item.name}
+                        image={item.image}
+                        content={item.content}
+                        imagepopover={item.imagepopover}
+                        documentation={item.documentation}
+                    />
+                ))}
             </div>
         </motion.div>
     )

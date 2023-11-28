@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import About from '@/components/About'
 import ContactMe from '@/components/ContactMe'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
-import Skills from '@/components/Skills'
+// import Skills from '@/components/Skills'
+const Skills = lazy(() => import('../components/Skills'))
 import WorkExperience from '@/components/WorkExperience'
 
 export default function Home() {

@@ -39,9 +39,10 @@ export default function PopoverItem({
                     <a href="#" className=" inline-block">
                         <button
                             onClick={redirect}
-                            className="flex items-center gap-x-2 capitalize bg-geral text-black border border-geral rounded-lg p-1 hover:bg-geral/70"
+                            className="flex items-center gap-x-2 capitalize bg-white text-black border border-geral rounded-lg p-1 hover:bg-transparent hover:text-white"
                         >
                             Saiba Mais
+                            <img className='w-7' src="/assets/documento.gif" alt="" />
                         </button>
                     </a>
                 </div>
@@ -50,11 +51,13 @@ export default function PopoverItem({
                         src={imagepopover}
                         alt="image"
                         className="h-full w-full rounded-lg object-cover sm:object-cover hidden sm:block"
+                        loading="lazy"
                     />
                     <img
                         src="/assets/gifCoding.gif"
                         alt="image"
                         className="h-full w-full rounded-lg object-contain sm:hidden"
+                        loading="lazy"
                     />
                 </div>
             </div>

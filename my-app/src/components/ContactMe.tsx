@@ -44,26 +44,45 @@ export default function ContactMe({}: Props) {
                 <h4 className="sm:text-2xl font-semibold text-center uppercase">
                     Eu tenho aquilo que você precisa.
                     <br />
-                    <span className="text-geral  uppercase">
-                        vamos conversar.
+                    <span
+                        className="text-geral uppercase flex items-center justify-center 
+                    "
+                    >
+                        vamos conversar
+                        <img
+                            className="w-7 ml-3"
+                            src="/assets/aperto-de-mao.gif"
+                            alt=""
+                        />
                     </span>
                 </h4>
                 <div className="space-y-2 flex flex-col ">
                     <button
                         onClick={redirect}
-                        className=" flex items-center space-x-3 justify-center"
+                        className=" flex items-center space-x-1 justify-center"
                     >
-                        <PhoneIcon className="text-geral h-6 w-6 animate-pulse" />
-                        <p className="sm:text-lg font-light">(62) 99698 3867</p>
+                        {/* <PhoneIcon className="text-geral h-6 w-6 animate-pulse" /> */}
+                        <img
+                            className="w-7"
+                            src="/assets/balao-de-fala.gif"
+                            alt=""
+                        />
+                        <p className="sm:text-lg font-light">(62) 99698 3867 - Whatsapp</p>
                     </button>
-                    <button className=" flex items-center space-x-3 justify-center">
-                        <EnvelopeIcon className="text-geral h-6 w-6 animate-pulse" />
+                    <button className=" flex items-center space-x-1 justify-center cursor-auto">
+                        {/* <EnvelopeIcon className="text-geral h-6 w-6 animate-pulse" /> */}
+                        <img
+                            className="w-7 "
+                            src="/assets/mensagem.gif"
+                            alt=""
+                        />
                         <p className="sm:text-lg font-light">
                             pedro.bessa.dev@gmail.com
                         </p>
                     </button>
-                    <button className=" flex items-center space-x-6 justify-center">
-                        <MapIcon className="text-geral h-6 w-6 animate-pulse" />
+                    <button className=" flex items-center space-x-1 justify-center">
+                        {/* <MapIcon className="text-geral h-6 w-6 animate-pulse" /> */}
+                        <img className="w-7" src="/assets/mapa.gif" alt="" />
                         <p className="sm:text-lg font-light">
                             Goiânia GO Brasil
                         </p>

@@ -26,6 +26,7 @@ const Header = (props: Props) => {
             >
                 {/* Social Icons */}
                 <SocialIcon
+                    className="hover:scale-105"
                     fgColor="gray"
                     bgColor="transparent"
                     network="linkedin"
@@ -34,6 +35,7 @@ const Header = (props: Props) => {
                 />
 
                 <SocialIcon
+                    className="hover:scale-105"
                     fgColor="gray"
                     bgColor="transparent"
                     network="github"
@@ -42,6 +44,7 @@ const Header = (props: Props) => {
                 />
 
                 <SocialIcon
+                    className="hover:scale-105"
                     fgColor="gray"
                     bgColor="transparent"
                     network="instagram"
@@ -50,6 +53,7 @@ const Header = (props: Props) => {
                 />
 
                 <SocialIcon
+                    className="hover:scale-105"
                     fgColor="gray"
                     bgColor="transparent"
                     network="youtube"
@@ -74,14 +78,15 @@ const Header = (props: Props) => {
                 className="flex items-center flex-row text-gray-300 cursor-pointer"
             >
                 <SocialIcon
+                    className="hover:scale-105"
+                    
                     fgColor="gray"
                     bgColor="transparent"
                     network="email"
                     href="#contact"
+                    aria-label="Entre em contato!"
                 />
-                <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-                    entre em contato
-                </p>
+                <p className="uppercase hidden md:inline-flex text-sm text-gray-400"></p>
             </motion.div>
         </header>
     )

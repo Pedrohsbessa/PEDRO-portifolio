@@ -60,7 +60,7 @@ export default function Projects({}: Props) {
                             Belas interfaces...
                         </div>
                         {projectList.map((item) => (
-                            <div key={item.id} className="m-3">
+                            <div key={item.id} className="m-1">
                                 <ImagesModal
                                     url={item.url}
                                     name={item.name}

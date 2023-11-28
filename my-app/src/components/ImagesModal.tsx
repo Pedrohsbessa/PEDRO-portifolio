@@ -27,11 +27,11 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
         top: '50%',
         left: '50%',
         width: isMobile ? '100%' : '50%',
-        borderRadius: '25px',
+        // borderRadius: '25px',
         transform: 'translate(-50%, -50%)',
         bgcolor: '#242424',
         p: 3,
-        boxShadow: isMobile ? 'none' : '1px 2px 4px rgba(163, 206, 241, .6)',
+        // boxShadow: isMobile ? 'none' : '1px 2px 4px rgba(163, 206, 241, .6)',
     }
 
     return (
@@ -50,7 +50,7 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                    <div className="flex flex-col items-center  space-y-8">
+                    <div className="flex flex-col items-center border-0 space-y-8">
                         <h2 className="text-2xl font-bold text-gray-100">
                             {name}{' '}
                         </h2>
@@ -60,10 +60,11 @@ export default function ImagesModal({ name, src, title, url, techs }: Props) {
                             <span className="text-geral">{techs} </span>{' '}
                         </p>
                         <button
-                            className="border border-geral w-fit bg-geral hover:bg-geral/75 rounded-lg p-3"
+                            className="flex items-center gap-2 border border-geral w-fit bg-white hover:bg-transparent hover:text-white rounded-lg p-3"
                             onClick={redirect}
                         >
-                            Venha conhecer 🌍
+                            Venha conhecer!
+                            <img className='w-6' src="/assets/click.gif" alt="a" />
                         </button>
                     </div>
                 </Box>
