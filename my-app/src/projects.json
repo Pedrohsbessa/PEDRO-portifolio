@@ -40,6 +40,14 @@
         "id": 4
     },
     {
+        "src": "Projects/Crud.png",
+        "name": "Album online",
+        "description": "Pequeno CRUD, onde criamos um banco de imagens, onde podemos agrupá-las em albuns e visualizá-las com uma modal",
+        "techs": "PHP, Laravel, VueJs, Vuetify, Nodejs e Tailwind CSS",
+        "url": "https://github.com/Pedrohsbessa/Projeto-five-sistem/tree/main",
+        "id": 6
+    },
+    {
         "src": "Projects/secretnumber.png",
         "name": "Número secreto",
         "description": "Game que sorteia um número, recebe valores por comando de voz e indica o usuário até o numero correto",
