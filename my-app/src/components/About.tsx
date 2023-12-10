@@ -12,7 +12,7 @@ export default function About({}: Props) {
             transition={{ duration: 1.5 }}
             className="h-screen flex flex-col items-center justify-center text-center md:text-left max-w-7xl mx-auto px-4 md:px-10"
         >
-            <h3 className="uppercase text-gray-500 text-2xl md:text-3xl mb-6">
+            <h3 className="uppercase text-gray-500 text-2xl md:text-3xl mb-14">
                 Sobre mim
             </h3>
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0">
@@ -28,7 +28,7 @@ export default function About({}: Props) {
                     transition={{
                         duration: 1.2,
                     }}
-                    className="mb-6 md:mb-0 w-32 h-32 md:w-64 md:h-72 lg:w-96 lg:h-96 xl:w-2/5 xl:h-5/6 rounded-full object-cover"
+                    className="mb-6 md:mb-0 w-32 h-32 md:w-64 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover"
                     src="assets/about-img.jpg"
                     alt="Imagem de perfil"
                 />
